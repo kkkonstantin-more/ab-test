@@ -1,0 +1,43 @@
+.user-card {
+  border: 1px solid hsla(0,0%,55%,.3);
+  box-shadow: 10px 5px 5px #eeeded;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.user-card > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.user-card__characteristic {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.user-card--selected {
+  border: 2px solid black;
+}
+
+.user-card__image {
+  border-radius: 50%;
+  margin: auto;
+  padding: 12px 0;
+}
+
+.user-card__image-container {
+  width: 100%;
+  display: flex;
+}
+
+.user-card__button {
+  width: 100%;
+}
